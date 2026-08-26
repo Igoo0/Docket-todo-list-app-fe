@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tells the browser to paint chrome, scrollbars and the first frame dark,
+         so there is no white flash before the stylesheet arrives. -->
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#111512" />
+    <title>Docket — today's lines</title>
+    <meta name="description" content="A day's tasks, kept on one sheet. Everything stays in this browser." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='3' fill='%23111512'/><rect x='6' y='7' width='20' height='4' fill='%23EFEDE5'/><rect x='6' y='14' width='20' height='4' fill='%23EFEDE5'/><rect x='6' y='21' width='11' height='4' fill='%233B5BFF'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* The app's stylesheet is imported from main.tsx, so in dev it lands one
+         tick after this document. These two rules cover that gap. */
+      html {
+        background-color: #111512;
+      }
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="font: 14px system-ui; max-width: 34rem; margin: 4rem auto; color: #efede5">
+        Docket needs JavaScript to run. Turn it on for this page and reload — nothing leaves
+        your browser either way.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
