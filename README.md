@@ -70,3 +70,14 @@ that surface on hover as small mono labels. Focus is always visible and
 | `src/components/TaskRow.tsx` | One line: toggle, edit, delete, drag |
 | `src/components/UndoToast.tsx` | Undo bar |
 | `src/index.css` | Design tokens, base layer, the strike |
+
+## UAT
+
+Skrip UAT dan panduan otomasi Katalon ada di `docs/uat/`:
+
+| Berkas | Untuk siapa |
+| --- | --- |
+| `docs/uat/UAT-TEST-SCRIPT.md` | Tester bisnis — 20 skenario, bahasa pengguna, kolom hasil siap diisi |
+| `docs/uat/KATALON-SETUP.md` | Automation engineer — Object Repository, keyword Groovy, jebakan Selenium |
+
+Jalankan UAT terhadap build produksi (`npm run build && npm run preview`), bukan dev server.
